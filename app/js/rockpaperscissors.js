@@ -96,8 +96,8 @@ function playTo(x) {
     /* YOUR CODE HERE */
     while (playerWins < x && computerWins < x) {
         // get and print inputs
-        var userChoice = getInput();
-        var computerChoice = randomPlay();
+        var userChoice = getPlayerMove();
+        var computerChoice = getComputerMove();
         console.log("User picked: " + userChoice); // THIS LINE DOES NOT PRINT IN THE FIRST RUN
         console.log("Computer picked: " + computerChoice);
         //determine winner
